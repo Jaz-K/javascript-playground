@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Playground</title>
+</head>
+
+<body>
+    <h1>Your Color Code</h1>
+    <button id="colorbtn">Change color</button>
+
+    <section>
+        <h2>Random Button Color on Click</h2>
+        <button class="randomButton">Click me</button>
+        <button class="randomButton">Click me</button>
+        <button class="randomButton">Click me</button>
+        <button class="randomButton">Click me</button>
+        <button class="randomButton">Click me</button>
+    </section>
+
+    <section>
+        <h2>Keyboard events</h2>
+        <input type="text">
+    </section>
+
+
+    <section>
+        <h2>Form event preventDefault</h2>
+        <form action="/shelter" id="shelterForm">
+            <input type="text" name="shelterInput" id="shelterInput">
+            <button>SUBMIT</button>
+        </form>
+        <h3>Available Cats</h3>
+        <ul id="cats"></ul>
+
+        <section>
+            <h2>Change events</h2>
+            <form action="">
+                <label for="">change event</label>
+                <input type="text" name="changeInput" id="changeInput">
+                <label for="">input event</label>
+                <input type="text" name="inputInput" id="inputInput">
+                <h3 class="exampleText">Example Text</h3>
+            </form>
+        </section>
+
+        <section>
+            <h2>Event delegation</h2>
+            <form action="" id="formTweet">
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="username">
+                <label for="tweet">Tweet</label>
+                <input type="text" name="tweet" id="tweet">
+                <button>Post Tweet</button>
+            </form>
+            <h3>Tweets</h3>
+            <ul id="tweets"></ul>
+        </section>
+
+        <!-- SCRIPT -->
+        <script src="index.js"></script>
+    </section>
+
+</body>
+
+</html>

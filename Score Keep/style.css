@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+    /* background-color: coral; */
+}
+main {
+    margin: auto;
+    width: fit-content;
+}
+
+button {
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.won {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+input[type="number"] {
+    width: 35px;
+}
+img {
+    max-width: 460px;
+    width: 100%;
+}
