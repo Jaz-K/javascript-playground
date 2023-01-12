@@ -12,18 +12,44 @@
 <body>
 
     <main>
-        <section>
-            <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt="hand throws big dice in air">
-            <h1>Score Keeper</h1>
-            <h2><span class="player1">0</span> to <span class="player2">0</span></h2>
-            <label for="playingTo">Playing to</label>
-            <input type="number" name="playingTo" id="playingTo" min="3" max="50" value="3">
-            <div>
-                <button class="btnPlayer1">+ 1 Player 1</button>
-                <button class="btnPlayer2">+ 1 Player 2</button>
-                <button class="reset">Reset</button>
-            </div>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half is-offset-one-quarter">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                        alt="hand throws big dice in air">
+                                </figure>
+                                <header class="card-header">
+                                    <h1 class="card-header-title">Score Keeper</h1>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h2 class="title is-1"><span class="player1">0</span> to <span
+                                                class="player2">0</span></h2>
+                                        <p class="subtitle">Use the buttons below to keep the score</p>
+                                        <label for="playingTo" class="label is-large is-inline">Playing to</label>
+                                        <input type="number" name="playingTo" id="playingTo" min="3" max="50" value="3"
+                                            class="label is-inline">
+                                        <p class="subtitle is-7">(min 3 max 50)</p>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <button id="btnPlayer1" class="card-footer-item button is-medium is-primary">+
+                                        1 Player
+                                        1</button>
+                                    <button id="btnPlayer2" class="card-footer-item button is-medium is-info">+
+                                        1 Player
+                                        2</button>
+                                    <button id="reset"
+                                        class="card-footer-item button is-medium is-danger">Reset</button>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
     <!-- SCRIPT -->
