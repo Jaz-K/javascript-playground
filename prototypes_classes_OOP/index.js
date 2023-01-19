@@ -62,3 +62,35 @@ Color.prototype.rgba = function (a = 1.0) {
 };
 
 const color1 = new Color(20, 30, 40);
+
+// document.body.style.backgroundColor = color1.rgba(0.5);
+("rgb(20, 30, 40, 0.5)");
+
+/* CLASS */
+
+class ColorClass {
+    constructor(r, g, b, name) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.name = name;
+    }
+    innerRGB() {
+        const { r, g, b } = this;
+        return `${r}, ${g}, ${b}`;
+    }
+    rgb() {
+        return `rgb(${this.innerRGB()})`;
+    }
+    rgba(a = 1.0) {
+        return `rgb(${this.innerRGB()}, ${a})`;
+    }
+    hex() {
+        const { r, g, b } = this;
+        return (
+            "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
+        );
+    }
+}
+
+const c1 = new ColorClass(150, 160, 70, "olive");
