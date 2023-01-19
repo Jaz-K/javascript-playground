@@ -153,3 +153,31 @@ class ColorClass {
 }
 
 const c1 = new ColorClass(150, 160, 70, "olive");
+
+/* EXTEND & SUPER */
+
+class Pet {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    eat() {
+        return `${this.name} is eating"`;
+    }
+}
+
+class Cat extends Pet {
+    constructor(name, age, nineLifes = 9) {
+        super(name, age);
+        this.nineLifes = nineLifes;
+    }
+    meow() {
+        return "MEEOOOOW!";
+    }
+}
+
+class Dog extends Pet {
+    bark() {
+        return "WUFF!";
+    }
+}
